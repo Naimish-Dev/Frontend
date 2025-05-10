@@ -52,9 +52,11 @@
   .h1 {
     @apply text-4xl lg:text-56 leading-normal font-semibold text-black;
   }
-  h2,
-  .h2 {
+  h2 {
     @apply text-24 lg:text-32 leading-normal font-semibold text-black;
+  }
+  .h2 {
+    @apply text-4xl lg:text-5xl leading-none font-extrabold
   }
   h3 {
     @apply text-20 lg:text-24 font-semibold text-black;
@@ -69,19 +71,32 @@
   .text_small {
     @apply text-12 leading-[12px] text-[#4A474773] font-semibold;
   }
+  .bg_square::after {
+    @apply content-[""] absolute top-0 left-0 bg-[url('/pattern/Union.png')] bg-contain bg-no-repeat w-full h-full;
+  }
+  .bg_square_bottom::before {
+    @apply content-[""] absolute bottom-0 md:bottom-10 lg:bottom-20 xl:bottom-[118px] right-0 bg-none lg:bg-[url('/pattern/square-bottom.png')] bg-contain bg-no-repeat bg-right w-full h-full max-w-[600px];
+  }
+  .hue_aimation {
+    animation:6s linear infinite hue-rotate;
+  }
+  @keyframes hue-rotate {
+    0% {filter:hue-rotate(0)}
+    to {filter:hue-rotate(-360deg)}
+  }
+  .text_pattern {
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+    @apply stroke-1 stroke-black text-white;
+  }
 }
-.bg_square::after {
-  @apply content-[""] absolute top-0 left-0 bg-[url('/pattern/Union.png')] bg-contain bg-no-repeat w-full h-full;
-}
-.bg_square_bottom::before {
-  @apply content-[""] absolute bottom-0 md:bottom-10 lg:bottom-20 xl:bottom-[118px] right-0 bg-none lg:bg-[url('/pattern/square-bottom.png')] bg-contain bg-no-repeat bg-right w-full h-full max-w-[600px];
-}
-
 @layer components {
   .hero_descript p {
     @apply text-16 lg:text-2xl font-[#010101CC] font-normal text-center;
   }
   .brand_slider_title p {
     @apply text-20 leading-tight font-normal text-[#010101CC];
+  }
+  .bg_blue_pattern {
+    @apply bg-[url('/images/banner/banner.jpg')] bg-cover bg-no-repeat bg-right w-full h-full;
   }
 }

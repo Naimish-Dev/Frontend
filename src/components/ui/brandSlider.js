@@ -9,7 +9,7 @@ export default function BrandSlider() {
       <div className="brand_slider_title text-center pb-9 hidden lg:block">
         <p>Customer brands</p>
       </div>
-      <Marquee className="flex items-center justify-between">
+      <Marquee direction='right' className="flex items-center justify-between">
         <div className="px-12 lg:px-16">
           <Image src={'/images/brand/image-1.png'} width={162} height={55} alt="image" />
         </div>
