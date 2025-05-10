@@ -28,6 +28,8 @@
   --spacing-18px: 18px;
   --spacing-28px: 28px;
   --spacing-36px: 36px;
+  --spacing-40px: 40px;
+  --spacing-48px: 48px;
   --spacing-86px: 86px;
   --spacing-180px: 180px;
 
@@ -37,13 +39,11 @@
   /* max-width */
   --maxwidth-1105: 1104px;
 
-
   /* Shadow */
   --shadow-xl: 0px 4px 0px 0px rgba(0, 0, 0, 1);
 }
 
 @layer base {
- 
   .xxl {
     @apply text-4xl lg:text-5xl xl:text-7xl leading-tight font-semibold;
   }
@@ -58,7 +58,8 @@
   h3 {
     @apply text-20 lg:text-24 font-semibold text-black;
   }
-  h4, .h4 {
+  h4,
+  .h4 {
     @apply text-16 lg:text-18 leading-6 font-bold text-black;
   }
   h5 {

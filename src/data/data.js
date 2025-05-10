@@ -33,3 +33,10 @@ export const BountiesSubmissionsSortByOptions = [
   { label: 'Launch Date', value: 'LaunchDate' },
   { label: 'Grant Value', value: 'GrantValue' },
 ];
+
+export const forProjectLinks = [
+  { title: 'Create Bounty', href: '/create/bounty' },
+  { title: 'KOL Saas platform', href: '/' },
+  { title: 'Ambassador Program', href: '/' },
+  { title: 'Founder-led Marketing', href: '/' },
+];

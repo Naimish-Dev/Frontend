@@ -37,16 +37,19 @@ export default function Navbar() {
             />
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
-            <ExploreBtn className="bg-white hover:bg-white text-blue-btn! hover:text-white border-blue-btn shadow-none px-4 lg:px-7  py-1.5 lg:py-3 text-14 lg:text-20">
-              For Projects
-              <Image
-                alt="Arrow"
-                width={1000}
-                height={1000}
-                className="w-6 h-6 ml-2 hidden sm:block"
-                src="/icons/rocket-01.png"
-              />
-            </ExploreBtn>
+            <Link href="/for-project" className="font-medium text-18">
+              <ExploreBtn className="bg-white hover:bg-white text-blue-btn! hover:text-white border-blue-btn shadow-none px-4 lg:px-7  py-1.5 lg:py-3 text-14 lg:text-20">
+                For Projects
+                <Image
+                  alt="Arrow"
+                  width={1000}
+                  height={1000}
+                  className="w-6 h-6 ml-2 hidden sm:block"
+                  src="/icons/rocket-01.png"
+                />
+              </ExploreBtn>
+            </Link>
+
             <ExploreBtn className="bg-blue-btn text-white! hover:text-white  px-4 lg:px-7 py-1.5 lg:py-3 text-14 lg:text-20">
               For Creators
             </ExploreBtn>
@@ -60,7 +63,7 @@ export default function Navbar() {
             <div className="relative" ref={profileRef}>
               <ExploreBtn
                 onClick={() => setIsProfileOpen((pre) => !pre)}
-                className="bg-blue-btn text-white! hover:text-white p-5 rounded-full w-[29px] h-[29px] lg:w-[58px] lg:h-[58px] text-14 lg:text-20 hover:shadow-xl hover:bg-blue-btn"
+                className="bg-blue-btn text-white! hover:text-white p-5 rounded-full w-7 h-7 lg:w-[58px] lg:h-[58px] text-14 lg:text-20 hover:shadow-xl hover:bg-blue-btn"
               >
                 AJ
               </ExploreBtn>

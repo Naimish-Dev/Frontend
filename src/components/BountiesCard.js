@@ -29,7 +29,7 @@ export default function BountiesCard() {
               </Link>
             </div>
           </div>
-          <div className=" border border-solid border-black rounded-full py-[7px] px-[11px] text-16 font-semibold bg-[#6701EC] text-white flex items-center justify-center flex-shrink-0 flex-flex-1">
+          <div className=" border border-solid border-black rounded-full py-[7px] px-[11px] text-16px font-semibold bg-[#6701EC] text-white flex items-center justify-center flex-shrink-0 flex-flex-1">
             2800 usdt
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function BountiesCard() {
               <h4>3 days</h4>
             </div>
             <div className="flex-1/2">
-              <ExploreBtn>Explore</ExploreBtn>
+              <ExploreBtn >Explore</ExploreBtn>
               {/* <div className="flex justify-start -space-x-1.5">
                 {avatars.map((src, index) => (
                   <Image
