@@ -1,11 +1,13 @@
 import React from 'react'
 import ExploreBtn from './ui/explorebtn';
+import BrandSlider from './ui/brandSlider';
+import MarqueeSlide from './ui/marquee';
 
 export default function Hero() {
   return (
-    <div className="bg_square">
+    <div className="bg_square bg_square_bottom relative overflow-hidden">
       <div className="pt-28 xl:pt-32 2xl:pt-180px relative z-[1]">
-        <div className="max-w-[1104px] mx-auto w-full pb-20">
+        <div className="max-w-[1104px] mx-auto w-full pb-14 lg:pb-20">
           <div className="pb-4 lg:pb-7">
             <h1 className="xxl flex items-center flex-col">
               <div className="flex items-center gap-1">
@@ -20,11 +22,14 @@ export default function Hero() {
           <div className="hero_descript pb-16px lg:pb-28px">
             <p>Turn your post into profits</p>
           </div>
-            <ExploreBtn className="bg-blue-btn text-white! hover:text-white mx-auto px-4 lg:px-7 py-1.5 lg:py-3 text-14 lg:text-20">
+          <ExploreBtn className="bg-blue-btn text-white! hover:text-white mx-auto px-4 lg:px-7 py-1.5 lg:py-3 text-14 lg:text-20">
             Explore
-            </ExploreBtn>
+          </ExploreBtn>
         </div>
       </div>
+
+      <BrandSlider></BrandSlider>
+      <MarqueeSlide></MarqueeSlide>
     </div>
   );
 }

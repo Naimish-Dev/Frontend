@@ -31,6 +31,7 @@
   --spacing-40px: 40px;
   --spacing-48px: 48px;
   --spacing-86px: 86px;
+  --spacing-118px: 118px;
   --spacing-180px: 180px;
 
   /* width */
@@ -72,9 +73,15 @@
 .bg_square::after {
   @apply content-[""] absolute top-0 left-0 bg-[url('/pattern/Union.png')] bg-contain bg-no-repeat w-full h-full;
 }
+.bg_square_bottom::before {
+  @apply content-[""] absolute bottom-0 md:bottom-10 lg:bottom-20 xl:bottom-[118px] right-0 bg-none lg:bg-[url('/pattern/square-bottom.png')] bg-contain bg-no-repeat bg-right w-full h-full max-w-[600px];
+}
 
 @layer components {
   .hero_descript p {
     @apply text-16 lg:text-2xl font-[#010101CC] font-normal text-center;
+  }
+  .brand_slider_title p {
+    @apply text-20 leading-tight font-normal text-[#010101CC];
   }
 }

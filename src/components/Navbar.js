@@ -63,7 +63,7 @@ export default function Navbar() {
             <div className="relative" ref={profileRef}>
               <ExploreBtn
                 onClick={() => setIsProfileOpen((pre) => !pre)}
-                className="bg-blue-btn text-white! hover:text-white p-5 rounded-full w-7 h-7 lg:w-[58px] lg:h-[58px] text-14 lg:text-20 hover:shadow-xl hover:bg-blue-btn"
+                className="bg-blue-btn text-white! hover:text-white p-0 rounded-full w-[29px] h-[29px] lg:w-[58px] lg:h-[58px] text-14 lg:text-20 hover:shadow-xl hover:bg-blue-btn"
               >
                 AJ
               </ExploreBtn>
