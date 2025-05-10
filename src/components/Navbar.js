@@ -36,8 +36,23 @@ export default function Navbar() {
               src="/logo/ampli5.png"
             />
           </Link>
-
           <div className="flex items-center gap-2 sm:gap-4">
+            <ExploreBtn className="bg-white hover:bg-white text-blue-btn! hover:text-white border-blue-btn shadow-none px-4 lg:px-7  py-1.5 lg:py-3 text-14 lg:text-20">
+              For Projects
+              <Image
+                alt="Arrow"
+                width={1000}
+                height={1000}
+                className="w-6 h-6 ml-2 hidden sm:block"
+                src="/icons/rocket-01.png"
+              />
+            </ExploreBtn>
+            <ExploreBtn className="bg-blue-btn text-white! hover:text-white  px-4 lg:px-7 py-1.5 lg:py-3 text-14 lg:text-20">
+              For Creators
+            </ExploreBtn>
+          </div>
+
+          {/* <div className="flex items-center gap-2 sm:gap-4">
             <Link href="/bounties" className="font-medium text-18">
               Bounties
             </Link>
@@ -69,7 +84,7 @@ export default function Navbar() {
                 ''
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
     </header>

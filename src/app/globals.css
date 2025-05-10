@@ -27,15 +27,24 @@
   --spacing-16: 16px;
   --spacing-18: 18px;
   --spacing-36: 36px;
+  --spacing-180: 180px;
 
   /* width */
   --width-151: 151px;
+
+  /* max-width */
+  --maxwidth-1105: 1104px;
+
 
   /* Shadow */
   --shadow-xl: 0px 4px 0px 0px rgba(0, 0, 0, 1);
 }
 
 @layer base {
+ 
+  .xxl {
+    @apply text-4xl lg:text-5xl xl:text-7xl leading-normal font-semibold;
+  }
   h1,
   .h1 {
     @apply text-4xl lg:text-56 leading-normal font-semibold text-black;
