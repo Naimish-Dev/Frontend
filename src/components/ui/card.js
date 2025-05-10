@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Card({ vector, children }) {
   return (
-    <div className="p-4 lg:p-36 border-2 rounded-4xl bg-white relative z-[1]">
+    <div className="p-4 lg:p-36px border-2 rounded-4xl bg-white relative z-[1]">
       {vector && (
         <Image
           src={vector}

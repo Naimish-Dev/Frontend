@@ -18,7 +18,7 @@ export default function Footer() {
                 src="/logo/ampli5.png"
               />
             </Link>
-            <div className="flex items-center gap-4 sm:gap-16 text-14 sm:text-18 font-medium">
+            <div className="flex items-center gap-4 text-14 sm:text-18 font-medium">
               <Link href="#">Privacy Policy</Link>
               <Link href="#"> Terms of Service</Link>
             </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="text-14 sm:text-18 font-medium">
               @{new Date().getFullYear()} Supa Limited. All rights reserved.
             </div>
-            <div className="flex items-center gap-4 sm:gap-16">
+            <div className="flex items-center gap-4">
               <Link href="#">
                 {' '}
                 <Image

@@ -13,7 +13,7 @@ export default function BountiesCard() {
   ];
   return (
     <div className="border border-solid border-black  rounded-3xl bg-white p-4 lg:p-6 relative">
-      <div className="bg-blue-bg text-white text-12 lg:text-14 leading-[14px] font-semibold rounded-tr-3xl rounded-bl-3xl w-max py-8 px-16 absolute -top-[1px] -right-[1px] capitalize">
+      <div className="bg-blue-bg text-white text-12 lg:text-14 leading-[14px] font-semibold rounded-tr-3xl rounded-bl-3xl w-max py-8px px-16px absolute -top-[1px] -right-[1px] capitalize">
         open
       </div>
       <div className="flex flex-col gap-4 lg:gap-6">

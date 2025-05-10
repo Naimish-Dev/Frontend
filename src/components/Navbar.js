@@ -25,13 +25,13 @@ export default function Navbar() {
 
   return (
     <header className="bg-white w-full sticky top-0 z-50">
-      <Container className="py-18">
+      <Container className="py-18px">
         <div className="flex items-center justify-between">
           <Link href="/">
             <Image
               alt="Logo"
               width={84}
-              height={100}
+              height={33}
               className="w-[84px] lg:w-[115px] h-full"
               src="/logo/ampli5.png"
             />
@@ -52,7 +52,7 @@ export default function Navbar() {
             </ExploreBtn>
           </div>
 
-          {/* <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <Link href="/bounties" className="font-medium text-18">
               Bounties
             </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
                 ''
               )}
             </div>
-          </div> */}
+          </div> 
         </div>
       </Container>
     </header>
