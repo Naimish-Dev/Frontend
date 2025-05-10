@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import ExploreBtn from './ui/explorebtn';
 
-export default function CountiesCard() {
+export default function BountiesCard() {
   const avatars = [
     '/thumbnail/image.png',
     '/thumbnail/image-1.png',
@@ -13,7 +13,7 @@ export default function CountiesCard() {
   ];
   return (
     <div className="border border-solid border-black  rounded-3xl bg-white p-4 lg:p-6 relative">
-      <div className="bg-[#008CFF] text-white text-12 lg:text-14 leading-[14px] font-semibold rounded-tr-3xl rounded-bl-3xl w-max py-8 px-16 absolute -top-[1px] -right-[1px] capitalize">
+      <div className="bg-blue-bg text-white text-12 lg:text-14 leading-[14px] font-semibold rounded-tr-3xl rounded-bl-3xl w-max py-8 px-16 absolute -top-[1px] -right-[1px] capitalize">
         open
       </div>
       <div className="flex flex-col gap-4 lg:gap-6">
@@ -50,8 +50,8 @@ export default function CountiesCard() {
               <h4>3 days</h4>
             </div>
             <div className="flex-1/2">
-              {/* <ExploreBtn>Explore</ExploreBtn> */}
-              <div className="flex justify-start -space-x-1.5">
+              <ExploreBtn>Explore</ExploreBtn>
+              {/* <div className="flex justify-start -space-x-1.5">
                 {avatars.map((src, index) => (
                   <Image
                     key={index}
@@ -64,7 +64,7 @@ export default function CountiesCard() {
                     decoding="async"
                   />
                 ))}
-              </div>{' '}
+              </div> */}
             </div>
           </div>
         </div>

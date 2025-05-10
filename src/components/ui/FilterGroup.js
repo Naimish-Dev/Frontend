@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FilterButton from './filterbtn';
+import Image from 'next/image';
 
 const filters = [
   { id: 'video', label: 'Video', img: '/icons/ai-video.png' },
@@ -10,30 +11,27 @@ const filters = [
 
 export default function FilterGroup() {
   const [selected, setSelected] = useState([]);
-
   const toggleFilter = (id) => {
     setSelected((prev) => (prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id]));
   };
-
   const isActive = (id) => selected.includes(id);
-
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex gap-2 flex-wrap">
       {filters.map((filter) => (
         <FilterButton
           key={filter.id}
-          label={filter.label}
-          img={filter.img}
           active={isActive(filter.id)}
           onClick={() => toggleFilter(filter.id)}
-        />
+        >
+          <Image src={filter.img} alt="icon" height={24} width={24} />
+          {filter.label}
+        </FilterButton>
       ))}
 
-      <FilterButton
-        label="Deselect all"
-        img={'/icons/multiplication-sign.png'}
-        onClick={() => setSelected([])}
-      />
+      <FilterButton onClick={() => setSelected([])}>
+        <Image src="/icons/multiplication-sign.png" alt="icon" height={24} width={24} />
+        Deselect all
+      </FilterButton>
     </div>
   );
 }
