@@ -8,7 +8,7 @@ import Filter from './Filter';
 export default function BountiesList({ title, vector, data }) {
   return (
     <div>
-      <div className="bg-[#FDF4E9] relative pt-[56px] bg_square w-screen overflow-x-hidden">
+      <div className="bg-[#FDF4E9] relative pt-[56px] bg_square w-full overflow-x-hidden">
         <Container>
           <div className="mb-6 lg:mb-9">
             <Title>{title || 'Bounties'}</Title>

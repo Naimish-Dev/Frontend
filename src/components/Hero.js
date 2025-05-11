@@ -4,6 +4,10 @@ import BrandSlider from './ui/brandSlider';
 import MarqueeSlide from './ui/marquee';
 import Image from 'next/image';
 import HowItWork from './HowItWork';
+import IconText from './Icontext';
+import CardImage from './CardImage';
+import LatestPerform from './LatestPerform';
+import WaveContnt from './WaveContnt';
 
 export default function Hero() {
   return (
@@ -40,9 +44,40 @@ export default function Hero() {
       <BrandSlider></BrandSlider>
       <MarqueeSlide></MarqueeSlide>
     </div>
-    <div className='bg_blue_pattern py-14 lg:py-16'>
+    <div className='bg_blue_pattern'>
         <HowItWork></HowItWork>
     </div>
+
+    <div className='grid_text bg-white pt-5 pb-12 md:py-14 lg:py-20'>
+      <IconText></IconText>
+    </div>
+    <div className='bg-[#3EB59F] relative py-86px bgsquare_bottom bg_vertial_pattern'>
+        <div className='max-w-[1198px] mx-auto px-4 w-full relative z-[1] flex items-center flex-col sm:flex-row gap-12 sm:gap-11'>
+          <div className=' relative z-[1] text_pattern max-w-[400px] text-center sm:text-left text-4xl leading-tight lg:text-5xl lg:leading-[58px] font-extrabold'>Our <br/> Top attention generators</div>
+          <div className='relative z-[1] grid grid-cols-2 lg:grid-cols-3 gap-4'>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+            <CardImage></CardImage>
+          </div>
+        </div>
+    </div>
+    <div className='relative bg-white'>
+      <div className='absolute -top-24 left-0'>
+        <Image src={'/pattern/Vector7.png'} width={230} height={219} alt=''/>
+      </div>
+      <LatestPerform></LatestPerform>
+    </div>
+
+    <div className='bg_wave_pattern relative -mt-[400px]'> 
+      <WaveContnt></WaveContnt>
+    </div>
+
     </>
   );
 }

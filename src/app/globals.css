@@ -23,6 +23,7 @@
 
   /* Spacing */
   --spacing-8px: 8px;
+  --spacing-9px: 9px;
   --spacing-12px: 12px;
   --spacing-16px: 16px;
   --spacing-18px: 18px;
@@ -31,6 +32,8 @@
   --spacing-36px: 36px;
   --spacing-40px: 40px;
   --spacing-48px: 48px;
+  --spacing-60px: 60px;
+  --spacing-82px: 82px;
   --spacing-86px: 86px;
   --spacing-118px: 118px;
   --spacing-180px: 180px;
@@ -103,4 +106,34 @@
   .card_desc p {
     @apply text-16 lg:text-20 leading-6 lg:leading-8 font-normal text-black;
   }
-}
+  .grid_content_info p {
+    @apply text-16 lg:text-20 leading-tight font-semibold text-black
+  }
+  .bgsquare_bottom::before {
+    @apply content-[""] absolute bottom-0 right-0 bg-[url('/pattern/square-bottom1.png')] bg-contain bg-no-repeat bg-center sm:bg-bottom w-full h-full max-w-[600px];
+  }
+  .bg_vertial_pattern::after {
+    @apply content-[""] absolute top-0 left-0 bg-[url('/pattern/pattern_mobile1.png')] sm:bg-[url('/pattern/vertical-pattern.jpg')] bg-cover sm:bg-cover bg-no-repeat w-full h-[235px] sm:h-full sm:max-w-[610px];
+  }
+  .bg_star_pattern::after {
+    @apply content-[""] absolute bottom-[27px] -left-[27px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[37px] h-[37px];
+  }
+  .bg_star_pattern::before {
+    @apply content-[""] absolute top-0 -right-[40px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[47px] h-[47px];
+  }
+  .masenory_grid .masenory_grid_item {
+    @apply flex h-full;
+  }
+  .masenory_grid_item img {
+    @apply w-full;
+  } 
+  .bg_wave_pattern {
+    @apply bg-[url('/pattern/wave.png')] bg-cover bg-no-repeat w-full h-[974px];
+  }
+   .bg-wave_pattern  img {
+    @apply w-full h-full
+   }
+   .bg_wave_info p {
+    @apply text-20 lg:text-32 leading-tight font-medium text-white max-w-[800px] w-full mx-auto;
+   }
+} 
