@@ -60,7 +60,7 @@
     @apply text-24 lg:text-32 leading-normal font-semibold text-black;
   }
   .h2 {
-    @apply text-4xl lg:text-5xl leading-none font-extrabold
+    @apply text-4xl lg:text-5xl leading-none font-extrabold;
   }
   h3 {
     @apply text-20 lg:text-24 font-semibold text-black;
@@ -81,18 +81,39 @@
   .bg_square_bottom::before {
     @apply content-[""] absolute bottom-0 md:bottom-10 lg:bottom-20 xl:bottom-[118px] right-0 bg-none lg:bg-[url('/pattern/square-bottom.png')] bg-contain bg-no-repeat bg-right w-full h-full max-w-[600px];
   }
+
   .hue_aimation {
-    animation:6s linear infinite hue-rotate;
+    animation: 6s linear infinite hue-rotate;
   }
+
   @keyframes hue-rotate {
-    0% {filter:hue-rotate(0)}
-    to {filter:hue-rotate(-360deg)}
+    0% {
+      filter: hue-rotate(0);
+    }
+    to {
+      filter: hue-rotate(-360deg);
+    }
   }
+
   .text_pattern {
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000;
     @apply stroke-1 stroke-black text-white;
   }
+
+  .gradient-border {
+    border-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(175, 175, 175, 0.7),
+        rgba(255, 255, 255, 0.4)
+      )
+      1;
+  }
 }
+
 @layer components {
   .hero_descript p {
     @apply text-16 lg:text-2xl font-[#010101CC] font-normal text-center;
@@ -107,7 +128,7 @@
     @apply text-16 lg:text-20 leading-6 lg:leading-8 font-normal text-black;
   }
   .grid_content_info p {
-    @apply text-16 lg:text-20 leading-tight font-semibold text-black
+    @apply text-16 lg:text-20 leading-tight font-semibold text-black;
   }
   .bgsquare_bottom::before {
     @apply content-[""] absolute bottom-0 right-0 bg-[url('/pattern/square-bottom1.png')] bg-contain bg-no-repeat bg-center sm:bg-bottom w-full h-full max-w-[600px];
@@ -126,14 +147,14 @@
   }
   .masenory_grid_item img {
     @apply w-full;
-  } 
+  }
   .bg_wave_pattern {
     @apply bg-[url('/pattern/wave_mobile.png')] sm:bg-[url('/pattern/wave.png')] bg-cover bg-center bg-no-repeat w-full h-full;
   }
-   .bg-wave_pattern  img {
-    @apply w-full h-full
-   }
-   .bg_wave_info p {
+  .bg-wave_pattern img {
+    @apply w-full h-full;
+  }
+  .bg_wave_info p {
     @apply text-20 lg:text-32 leading-tight font-medium text-white max-w-[800px] w-full mx-auto;
-   }
-} 
+  }
+}

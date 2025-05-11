@@ -5,10 +5,8 @@ import Container from '@/components/ui/container';
 import ExploreBtn from '@/components/ui/explorebtn';
 import Image from 'next/image';
 
-
-
 export default function pages() {
-  
+
   return (
     <div>
       <div className="bg-[#FDF4E9] relative pt-[56px] pb-14 bg_square overflow-x-hidden ">
@@ -37,11 +35,9 @@ export default function pages() {
             </ExploreBtn>
 
             <h1 className=" w-full text-center text-[36px] lg:text-[72px] leading-[40px] lg:leading-[90px] font-semibold ">
-              You need Mercenaries,
+              Acquire Users at
               <br className="hidden md:block" />
-              <span className=" text-blue-tx">
-                not <br className="block md:hidden" /> cheerleaders
-              </span>
+              <span className=" text-blue-tx">$5–10 CAC</span>
             </h1>
           </div>
           <div className="relative">
@@ -55,9 +51,7 @@ export default function pages() {
               />
             </div>
             <Card className="rounded-2xl lg:py-6!">
-              <h2 className="text-[#306400] text-center uppercase">
-                Still trying to find ambassadors on zealy?{' '}
-              </h2>
+              <h2 className="text-[#306400] text-center uppercase">Education Twitter Threads</h2>
               <p className="text-20 text-center">
                 You don’t need more airdrop hunters, You need people who will fight for your project
                 like it’s their own bag.

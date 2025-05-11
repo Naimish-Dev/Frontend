@@ -34,12 +34,8 @@ export default function Filter() {
     };
     document.addEventListener('click', handleClickOutside);
     return () => {
-      if (sortingWrapperRef.current) {
-        sortingWrapperRef.current.removeEventListener('click', () => setIsSortingOpen(false));
-      }
-      if (categoryWrapperRef.current) {
-        categoryWrapperRef.current.removeEventListener('click', () => setIsCategoryOpen(false));
-      }
+      document.removeEventListener('click', () => setIsSortingOpen(false));
+      document.removeEventListener('click', () => setIsCategoryOpen(false));
     };
   }, []);
 

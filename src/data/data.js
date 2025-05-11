@@ -38,5 +38,5 @@ export const forProjectLinks = [
   { title: 'Create Bounty', href: '/create/bounty' },
   { title: 'KOL Saas platform', href: '/' },
   { title: 'Ambassador Program', href: '/ambassador' },
-  { title: 'Founder-led Marketing', href: '/' },
+  { title: 'Founder-led Marketing', href: '/founder-led' },
 ];
