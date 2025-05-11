@@ -27,6 +27,7 @@
   --spacing-16px: 16px;
   --spacing-18px: 18px;
   --spacing-28px: 28px;
+  --spacing-32px: 32px;
   --spacing-36px: 36px;
   --spacing-40px: 40px;
   --spacing-48px: 48px;
@@ -98,5 +99,8 @@
   }
   .bg_blue_pattern {
     @apply bg-[url('/images/banner/banner.jpg')] bg-cover bg-no-repeat bg-right w-full h-full;
+  }
+  .card_desc p {
+    @apply text-16 lg:text-20 leading-6 lg:leading-8 font-normal text-black;
   }
 }
