@@ -22,7 +22,7 @@ export default function BountiesCard() {
             <div className="flex-shrink-0">
               <Image src={'/images/icon.png'} width={64} height={64} alt="xd-icon" />{' '}
             </div>
-            <div className="">
+            <div >
               <h4>xDLOL</h4>
               <Link className="text_small" href="#">
                 https://x.com/xDLOL
