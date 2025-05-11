@@ -20,7 +20,7 @@ export default function BountiesCard() {
         <div className="flex items-center gap-8 lg:gap-6 justify-between">
           <div className="flex items-center gap-1">
             <div className="flex-shrink-0">
-              <Image src={'/images/xd-icon.png'} width={64} height={64} alt="xd-icon" />{' '}
+              <Image src={'/images/icon.png'} width={64} height={64} alt="xd-icon" />{' '}
             </div>
             <div className="">
               <h4>xDLOL</h4>

@@ -17,7 +17,7 @@ export default function Hero() {
         <Image className='w-[90px] h-[90px] md:w-[166px] md:h-[166px]' src={'/pattern/Vector3_mobile.png'} width={166} height={166} alt="icon" />
       </div>
       <div className="hue_aimations absolute top-11 -right-5 md:-right-9">
-        <Image className='w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain' src={'/pattern/vector4.png'} width={170} height={170} alt="icon" />
+        <Image className='w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain' src={'/pattern/Vector4.png'} width={170} height={170} alt="icon" />
       </div>
       
       <div className="pt-28 xl:pt-32 2xl:pt-180px relative z-[1]">

@@ -22,7 +22,7 @@ export default function pages() {
         <div className="hue_aimations absolute top-4 lg:top-20 -right-5 lg:-right-9">
           <Image
             className="w-[90px] h-[90px] lg:w-[170px] lg:h-[170px] object-contain"
-            src={'/pattern/vector4.png'}
+            src={'/pattern/Vector4.png'}
             width={170}
             height={170}
             alt="icon"
@@ -44,7 +44,7 @@ export default function pages() {
             <div className="hidden lg:block absolute -top-9 right-44 -z-10">
               <Image
                 className="w-[103px] h-[103px] object-contain"
-                src={'/pattern/vector2.png'}
+                src={'/pattern/Vector2.png'}
                 width={103}
                 height={103}
                 alt="icon"
