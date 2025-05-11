@@ -68,13 +68,13 @@ export default function Hero() {
         </div>
     </div>
     <div className='relative bg-white'>
-      <div className='absolute -top-24 left-0'>
-        <Image src={'/pattern/Vector7.png'} width={230} height={219} alt=''/>
+      <div className='absolute -top-[72px] md:-top-24 left-0'>
+        <Image className='w-[100px] lg:w-[150px] h-[150px] xl:w-fit h-fit' src={'/pattern/Vector7.png'} width={230} height={219} alt=''/>
       </div>
       <LatestPerform></LatestPerform>
     </div>
 
-    <div className='bg_wave_pattern relative -mt-[400px]'> 
+    <div className='bg_wave_pattern relative -mt-[100px] sm:-mt-[400px]'> 
       <WaveContnt></WaveContnt>
     </div>
 

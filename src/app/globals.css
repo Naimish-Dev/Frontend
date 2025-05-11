@@ -116,10 +116,10 @@
     @apply content-[""] absolute top-0 left-0 bg-[url('/pattern/pattern_mobile1.png')] sm:bg-[url('/pattern/vertical-pattern.jpg')] bg-cover sm:bg-cover bg-no-repeat w-full h-[235px] sm:h-full sm:max-w-[610px];
   }
   .bg_star_pattern::after {
-    @apply content-[""] absolute bottom-[27px] -left-[27px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[37px] h-[37px];
+    @apply content-[""] absolute bottom-[68px] md:bottom-[27px] left-[40px] md:-left-[27px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[27px] h-[27px] md:w-[37px] md:h-[37px];
   }
   .bg_star_pattern::before {
-    @apply content-[""] absolute top-0 -right-[40px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[47px] h-[47px];
+    @apply content-[""] absolute top-10 right-[50px] md:-right-[40px] bg-[url('/icons/Star-1.png')] bg-cover sm:bg-cover bg-no-repeat w-[30px] h-[30px] md:w-[47px] md:h-[47px];
   }
   .masenory_grid .masenory_grid_item {
     @apply flex h-full;
@@ -128,7 +128,7 @@
     @apply w-full;
   } 
   .bg_wave_pattern {
-    @apply bg-[url('/pattern/wave.png')] bg-cover bg-no-repeat w-full h-[974px];
+    @apply bg-[url('/pattern/wave_mobile.png')] sm:bg-[url('/pattern/wave.png')] bg-cover bg-center bg-no-repeat w-full h-full;
   }
    .bg-wave_pattern  img {
     @apply w-full h-full
