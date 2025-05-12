@@ -1,7 +1,13 @@
 @import 'tailwindcss';
 
+:root {
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+}
+
 * {
   box-sizing: border-box;
+  font-family: var(--font-bricolage);
+
 }
 
 @theme {
